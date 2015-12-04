@@ -8,13 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		45DB6A5A063EE9CB7E69E53A /* Pods_SCNavigationControlCenter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A06FD37A8B81EC4671FBEB /* Pods_SCNavigationControlCenter_Tests.framework */; };
+		5039735F1C116A6800C26369 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503973581C116A6800C26369 /* PictureViewController.m */; };
+		503973601C116A6800C26369 /* SCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5039735A1C116A6800C26369 /* SCNavigationController.m */; };
+		503973611C116A6800C26369 /* TabAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5039735C1C116A6800C26369 /* TabAViewController.m */; };
+		503973621C116A6800C26369 /* TabBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5039735E1C116A6800C26369 /* TabBViewController.m */; };
+		5039736B1C116A7D00C26369 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 503973641C116A7D00C26369 /* 1.jpg */; };
+		5039736C1C116A7D00C26369 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 503973651C116A7D00C26369 /* 2.jpg */; };
+		5039736D1C116A7D00C26369 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 503973661C116A7D00C26369 /* 3.jpg */; };
+		5039736E1C116A7D00C26369 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 503973671C116A7D00C26369 /* 4.jpg */; };
+		5039736F1C116A7D00C26369 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 503973681C116A7D00C26369 /* 5.jpg */; };
+		503973701C116A7D00C26369 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 503973691C116A7D00C26369 /* 6.jpg */; };
+		503973711C116A7D00C26369 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5039736A1C116A7D00C26369 /* 7.jpg */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* SCAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* SCViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -37,9 +47,24 @@
 
 /* Begin PBXFileReference section */
 		2D6D35C8B07B5350B56D6BBC /* Pods-SCNavigationControlCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCNavigationControlCenter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCNavigationControlCenter_Tests/Pods-SCNavigationControlCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		503973571C116A6800C26369 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
+		503973581C116A6800C26369 /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
+		503973591C116A6800C26369 /* SCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNavigationController.h; sourceTree = "<group>"; };
+		5039735A1C116A6800C26369 /* SCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNavigationController.m; sourceTree = "<group>"; };
+		5039735B1C116A6800C26369 /* TabAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabAViewController.h; sourceTree = "<group>"; };
+		5039735C1C116A6800C26369 /* TabAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabAViewController.m; sourceTree = "<group>"; };
+		5039735D1C116A6800C26369 /* TabBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBViewController.h; sourceTree = "<group>"; };
+		5039735E1C116A6800C26369 /* TabBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBViewController.m; sourceTree = "<group>"; };
+		503973641C116A7D00C26369 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		503973651C116A7D00C26369 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		503973661C116A7D00C26369 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		503973671C116A7D00C26369 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		503973681C116A7D00C26369 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		503973691C116A7D00C26369 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		5039736A1C116A7D00C26369 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		50A7AA5E2FEC5BAC94CA8019 /* Pods_SCNavigationControlCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCNavigationControlCenter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F9A0CC3F3A32C957CEF22A /* Pods-SCNavigationControlCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCNavigationControlCenter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCNavigationControlCenter_Example/Pods-SCNavigationControlCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* SCNavigationControlCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SCNavigationControlCenter.app; path = SCNavigationControlCenter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* SCNavigationControlCenter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCNavigationControlCenter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -49,10 +74,8 @@
 		6003F59B195388D20070C39A /* SCNavigationControlCenter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCNavigationControlCenter-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* SCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* SCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = SCNavigationControlCenter_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* SCNavigationControlCenter_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCNavigationControlCenter_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -93,6 +116,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		503973561C116A3600C26369 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				503973571C116A6800C26369 /* PictureViewController.h */,
+				503973581C116A6800C26369 /* PictureViewController.m */,
+				503973591C116A6800C26369 /* SCNavigationController.h */,
+				5039735A1C116A6800C26369 /* SCNavigationController.m */,
+				5039735B1C116A6800C26369 /* TabAViewController.h */,
+				5039735C1C116A6800C26369 /* TabAViewController.m */,
+				5039735D1C116A6800C26369 /* TabBViewController.h */,
+				5039735E1C116A6800C26369 /* TabBViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		503973631C116A6C00C26369 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				503973641C116A7D00C26369 /* 1.jpg */,
+				503973651C116A7D00C26369 /* 2.jpg */,
+				503973661C116A7D00C26369 /* 3.jpg */,
+				503973671C116A7D00C26369 /* 4.jpg */,
+				503973681C116A7D00C26369 /* 5.jpg */,
+				503973691C116A7D00C26369 /* 6.jpg */,
+				5039736A1C116A7D00C26369 /* 7.jpg */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -108,8 +160,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* SCNavigationControlCenter.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* SCNavigationControlCenter_Example.app */,
+				6003F5AE195388D20070C39A /* SCNavigationControlCenter_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,12 +182,7 @@
 		6003F593195388D20070C39A /* Example for SCNavigationControlCenter */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* SCAppDelegate.h */,
-				6003F59D195388D20070C39A /* SCAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* SCViewController.h */,
-				6003F5A6195388D20070C39A /* SCViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
+				503973561C116A3600C26369 /* ViewController */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for SCNavigationControlCenter";
@@ -145,6 +192,11 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				503973631C116A6C00C26369 /* resource */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F59C195388D20070C39A /* SCAppDelegate.h */,
+				6003F59D195388D20070C39A /* SCAppDelegate.m */,
 				6003F595195388D20070C39A /* SCNavigationControlCenter-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -213,7 +265,7 @@
 			);
 			name = SCNavigationControlCenter_Example;
 			productName = SCNavigationControlCenter;
-			productReference = 6003F58A195388D20070C39A /* SCNavigationControlCenter.app */;
+			productReference = 6003F58A195388D20070C39A /* SCNavigationControlCenter_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* SCNavigationControlCenter_Tests */ = {
@@ -234,7 +286,7 @@
 			);
 			name = SCNavigationControlCenter_Tests;
 			productName = SCNavigationControlCenterTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* SCNavigationControlCenter_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -244,7 +296,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SC;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Sergio Chan";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -276,7 +328,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503973701C116A7D00C26369 /* 6.jpg in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				5039736F1C116A7D00C26369 /* 5.jpg in Resources */,
+				5039736E1C116A7D00C26369 /* 4.jpg in Resources */,
+				5039736B1C116A7D00C26369 /* 1.jpg in Resources */,
+				5039736C1C116A7D00C26369 /* 2.jpg in Resources */,
+				5039736D1C116A7D00C26369 /* 3.jpg in Resources */,
+				503973711C116A7D00C26369 /* 7.jpg in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -391,7 +450,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* SCAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* SCViewController.m in Sources */,
+				503973621C116A6800C26369 /* TabBViewController.m in Sources */,
+				503973611C116A6800C26369 /* TabAViewController.m in Sources */,
+				503973601C116A6800C26369 /* SCNavigationController.m in Sources */,
+				5039735F1C116A6800C26369 /* PictureViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +514,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -511,12 +574,14 @@
 			baseConfigurationReference = C0D4EBBD41001CCA1934C555 /* Pods-SCNavigationControlCenter_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCNavigationControlCenter/SCNavigationControlCenter-Prefix.pch";
 				INFOPLIST_FILE = "SCNavigationControlCenter/SCNavigationControlCenter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -526,12 +591,14 @@
 			baseConfigurationReference = 53F9A0CC3F3A32C957CEF22A /* Pods-SCNavigationControlCenter_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCNavigationControlCenter/SCNavigationControlCenter-Prefix.pch";
 				INFOPLIST_FILE = "SCNavigationControlCenter/SCNavigationControlCenter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -553,6 +620,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCNavigationControlCenter_Example.app/SCNavigationControlCenter_Example";
 				WRAPPER_EXTENSION = xctest;
@@ -572,6 +640,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCNavigationControlCenter_Example.app/SCNavigationControlCenter_Example";
 				WRAPPER_EXTENSION = xctest;

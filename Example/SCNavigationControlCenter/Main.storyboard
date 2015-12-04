@@ -1,27 +1,219 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GRS-An-Cb7">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <!--Navigation Controller-->
+        <scene sceneID="O19-GI-GIg">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="SCViewController" sceneMemberID="viewController">
+                <navigationController id="ypN-sM-l0w" customClass="SCNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="8xb-DE-YOb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D4i-TO-gK6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.31372549020000001" green="0.42352941179999998" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3KH-w0-Vx0" kind="relationship" relationship="rootViewController" id="3Sv-Wp-3Bw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dz6-ah-R9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-312" y="-410"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dxm-Hg-UPh">
+            <objects>
+                <viewController id="3KH-w0-Vx0" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                        <viewControllerLayoutGuide type="top" id="2ax-rq-exe"/>
+                        <viewControllerLayoutGuide type="bottom" id="FNL-O7-E8j"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="S1Z-yf-T3c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1ft-9M-kGQ">
+                                <rect key="frame" x="40" y="145" width="240" height="261"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This is an advanced navigation control center that can allow you to navigate to whichever view controller you want.  
+It's very simple!
+1. Simply long press the navigation bar to activate the control center and choose whichever view controller you want to navigate to. 
+2. Tap the blank area to return to the normal view.</string>
+                                <color key="textColor" red="0.31372549020000001" green="0.42352941179999998" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1ft-9M-kGQ" firstAttribute="centerX" secondItem="S1Z-yf-T3c" secondAttribute="centerX" id="Qb2-ff-ENh"/>
+                            <constraint firstItem="1ft-9M-kGQ" firstAttribute="centerY" secondItem="S1Z-yf-T3c" secondAttribute="centerY" id="bEG-0h-QpE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nOZ-ub-wrp">
+                        <barButtonItem key="rightBarButtonItem" title="Start" id="DV2-m6-Whm">
+                            <connections>
+                                <segue destination="VKB-hf-wSs" kind="push" id="neI-WJ-lPq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sEm-Zt-yMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-402"/>
+        </scene>
+        <!--TabA View Controller-->
+        <scene sceneID="O7l-h9-YNN">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="VKB-hf-wSs" customClass="TabAViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cgk-Tw-gUZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jft-f8-Qce"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X6M-x9-wVp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="c1R-4i-Hf5">
+                        <barButtonItem key="rightBarButtonItem" title="new VC" id="TWf-iB-Vw6">
+                            <connections>
+                                <action selector="ButtonPressed:" destination="VKB-hf-wSs" id="4vc-Bp-Ztb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVE-Wf-XXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="592" y="-402"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="utZ-ki-bhg">
+            <objects>
+                <tabBarController id="GRS-An-Cb7" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="tAw-zK-27q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ypN-sM-l0w" kind="relationship" relationship="viewControllers" id="iIl-qI-L6G"/>
+                        <segue destination="tZE-3n-IoW" kind="relationship" relationship="viewControllers" id="r84-Ns-GyW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YnD-dS-48Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-765" y="-45"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7FF-Tl-uoo">
+            <objects>
+                <navigationController id="tZE-3n-IoW" customClass="SCNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="X9o-rJ-gZS"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x3J-QF-Yc1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.31372549020000001" green="0.42352941179999998" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sH5-va-H9D" kind="relationship" relationship="rootViewController" id="hsp-NY-mCj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="diP-T5-UER" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-312" y="273"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ncK-hG-avc">
+            <objects>
+                <viewController id="sH5-va-H9D" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d06-Z8-ift"/>
+                        <viewControllerLayoutGuide type="bottom" id="ua6-2O-OwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d3L-vf-LtE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1gU-wf-uSZ">
+                                <rect key="frame" x="40" y="138" width="240" height="261"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This is an advanced navigation control center that can allow you to navigate to whichever view controller you want.  
+It's very simple!
+1. Simply long press the navigation bar to activate the control center and choose whichever view controller you want to navigate to. 
+2. Tap the blank area to return to the normal view.</string>
+                                <color key="textColor" red="0.31372549020000001" green="0.42352941179999998" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1gU-wf-uSZ" firstAttribute="centerX" secondItem="d3L-vf-LtE" secondAttribute="centerX" id="1uM-gP-ikS"/>
+                            <constraint firstItem="1gU-wf-uSZ" firstAttribute="centerY" secondItem="d3L-vf-LtE" secondAttribute="centerY" id="8sd-me-fyY"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="v9Q-Fd-G69">
+                        <barButtonItem key="rightBarButtonItem" title="Start" id="a9I-Ul-XWS">
+                            <connections>
+                                <segue destination="euM-Hg-M1M" kind="push" id="p18-xS-1Yz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w2p-dv-5cf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="273"/>
+        </scene>
+        <!--TabB View Controller-->
+        <scene sceneID="0H3-tM-KFg">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="euM-Hg-M1M" customClass="TabBViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3TQ-nf-L49"/>
+                        <viewControllerLayoutGuide type="bottom" id="z3d-PM-6Y3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="piC-Su-jfQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="5ZG-GU-XR7">
+                        <barButtonItem key="rightBarButtonItem" title="new VC" id="Zca-aF-Taf">
+                            <connections>
+                                <action selector="ButtonPressed:" destination="euM-Hg-M1M" id="rbd-zv-xgQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHf-ZF-fL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592" y="273"/>
         </scene>
     </scenes>
 </document>

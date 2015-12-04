@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SCNavigationControlCenter: 547e5c983b91d26468c61f7520554b6968fcaf0c
+  SCNavigationControlCenter: 36bc61ea1201f9e6009ff21ceaeed70d3e9ed118
 
 COCOAPODS: 0.39.0

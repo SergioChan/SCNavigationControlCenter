@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07B159265FCEC18A2209EEA71CE6EA04 /* SCNavigationControlCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F220E7870CDB2A61D133632BAAFCCC /* SCNavigationControlCenter.m */; };
 		0A7CF3CDC4EF5A2EC72EAADFD0731233 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		1C59B0B97A283E11002ABA93D52C744B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		24C48C970D6366873F2F34576F5300BB /* Pods-SCNavigationControlCenter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FDBE8D966C382B5E5C0396220A7370 /* Pods-SCNavigationControlCenter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		293EE2B101111EA2A85A5881673917AE /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8999BCC0DFCAB83C393CC5A011A4B0D5 /* iCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45FBD3EFE40C4BA07A59C29812A2C793 /* SCNavigationControlCenter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5498BEBFE0AC834A8A742E5FB13A75A4 /* SCNavigationControlCenter.bundle */; };
 		4D78B95D04615B9645704A2FA4741DB5 /* Pods-SCNavigationControlCenter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BE71140C63AD49B5E1259BC710E551 /* Pods-SCNavigationControlCenter_Example-dummy.m */; };
-		5039734E1C1165D400C26369 /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5039734A1C1165D400C26369 /* iCarousel.h */; };
-		5039734F1C1165D400C26369 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5039734B1C1165D400C26369 /* iCarousel.m */; };
-		503973501C1165D400C26369 /* UIViewExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 5039734C1C1165D400C26369 /* UIViewExt.h */; };
-		503973511C1165D400C26369 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5039734D1C1165D400C26369 /* UIViewExt.m */; };
-		503973541C1165EA00C26369 /* SCNavigationControlCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 503973521C1165EA00C26369 /* SCNavigationControlCenter.h */; };
-		503973551C1165EA00C26369 /* SCNavigationControlCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 503973531C1165EA00C26369 /* SCNavigationControlCenter.m */; };
-		76A691062FA1C307059A34A9FC155320 /* SCNavigationControlCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BB9A705D7FACAC66763EA9A08A462C /* SCNavigationControlCenter-dummy.m */; };
+		4DB912DF4FED576EA0F96A3364D30C1B /* SCNavigationControlCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 25C23739F29F1D442AAA073EA08CE09A /* SCNavigationControlCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9209471ADC049937B23D6935BB160D2B /* UIViewExt.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6D353E7826E58433B9CCE3EC78764F /* UIViewExt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97203B3D47C843F999DA684331221EBC /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2ACC423C1900F56D5BE260285A1242 /* UIViewExt.m */; };
 		99B830BD520D72F74EC598EEC50883DB /* Pods-SCNavigationControlCenter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2890C905D2FE917D203ED807E8818A73 /* Pods-SCNavigationControlCenter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C63F80188BE9C3A4CF1903E2CB553AE9 /* SCNavigationControlCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAC612D31CDA9291E6A489EA88276587 /* SCNavigationControlCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2CC3F0E519C9EC55BD4B0B2B756B40D /* SCNavigationControlCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAC612D31CDA9291E6A489EA88276587 /* SCNavigationControlCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8CC842524D3D14FF4573447BE35B7B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		DC248E5C9F9FB322E65ABD7DA44BF5EE /* SCNavigationControlCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BB9A705D7FACAC66763EA9A08A462C /* SCNavigationControlCenter-dummy.m */; };
+		E2DE507412B78212AF709E623AF2DBAE /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FBB5D00684DD17F61F31A08299F80D /* iCarousel.m */; };
 		F121DB05611BF0C2E962FFDE63C0F85C /* Pods-SCNavigationControlCenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D01EDDE33CF2C1C8EC43F833D83DEC /* Pods-SCNavigationControlCenter_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -50,30 +50,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04F220E7870CDB2A61D133632BAAFCCC /* SCNavigationControlCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SCNavigationControlCenter.m; sourceTree = "<group>"; };
 		1098D06C1467621EEABFDF66FA3F155F /* Pods-SCNavigationControlCenter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SCNavigationControlCenter_Tests-resources.sh"; sourceTree = "<group>"; };
+		25C23739F29F1D442AAA073EA08CE09A /* SCNavigationControlCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCNavigationControlCenter.h; sourceTree = "<group>"; };
 		26F8A2584C593648BB5B1209132E2030 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2890C905D2FE917D203ED807E8818A73 /* Pods-SCNavigationControlCenter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SCNavigationControlCenter_Example-umbrella.h"; sourceTree = "<group>"; };
 		33E9F6893BFBA5D1F2A1C982DDD0F332 /* Pods-SCNavigationControlCenter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SCNavigationControlCenter_Example-resources.sh"; sourceTree = "<group>"; };
 		370BF96DA5F259826A3124808A4872B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		424BE9A16EE9EB7FD5292CEED1A19A53 /* SCNavigationControlCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SCNavigationControlCenter.modulemap; sourceTree = "<group>"; };
-		5039734A1C1165D400C26369 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
-		5039734B1C1165D400C26369 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		5039734C1C1165D400C26369 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
-		5039734D1C1165D400C26369 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
-		503973521C1165EA00C26369 /* SCNavigationControlCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNavigationControlCenter.h; sourceTree = "<group>"; };
-		503973531C1165EA00C26369 /* SCNavigationControlCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNavigationControlCenter.m; sourceTree = "<group>"; };
 		5498BEBFE0AC834A8A742E5FB13A75A4 /* SCNavigationControlCenter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCNavigationControlCenter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		56BB9A705D7FACAC66763EA9A08A462C /* SCNavigationControlCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCNavigationControlCenter-dummy.m"; sourceTree = "<group>"; };
 		59B8B653EB5FEA63679C0926B2605FCB /* Pods_SCNavigationControlCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCNavigationControlCenter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A00D15E394514EF8C14C654E8A5EB48 /* Pods-SCNavigationControlCenter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SCNavigationControlCenter_Example.modulemap"; sourceTree = "<group>"; };
 		6A49D397D7FD10509D5DA05F88A15479 /* SCNavigationControlCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCNavigationControlCenter-prefix.pch"; sourceTree = "<group>"; };
 		85E5E43F3B649E64A1AD9C9C3A3D5970 /* Pods-SCNavigationControlCenter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SCNavigationControlCenter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86FBB5D00684DD17F61F31A08299F80D /* iCarousel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		8999BCC0DFCAB83C393CC5A011A4B0D5 /* iCarousel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		8C636D89EE94498535D767B30B361194 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91FDBE8D966C382B5E5C0396220A7370 /* Pods-SCNavigationControlCenter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SCNavigationControlCenter_Tests-umbrella.h"; sourceTree = "<group>"; };
 		92E551ABB43E3C4830D89CBB52C0E455 /* SCNavigationControlCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCNavigationControlCenter.xcconfig; sourceTree = "<group>"; };
 		9CD4E93B9658D81859F5BE2A385624E3 /* SCNavigationControlCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCNavigationControlCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A996BC7A4106352489353859789CB6BE /* Pods-SCNavigationControlCenter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SCNavigationControlCenter_Example-frameworks.sh"; sourceTree = "<group>"; };
+		AD6D353E7826E58433B9CCE3EC78764F /* UIViewExt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		B8D01EDDE33CF2C1C8EC43F833D83DEC /* Pods-SCNavigationControlCenter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SCNavigationControlCenter_Tests-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BAC612D31CDA9291E6A489EA88276587 /* SCNavigationControlCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCNavigationControlCenter-umbrella.h"; sourceTree = "<group>"; };
@@ -85,6 +84,7 @@
 		DDD5CC382807501E5797393C8A147BA5 /* Pods-SCNavigationControlCenter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SCNavigationControlCenter_Tests.modulemap"; sourceTree = "<group>"; };
 		E7A0E5299D71014E900F7488E2BA4579 /* Pods-SCNavigationControlCenter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SCNavigationControlCenter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E8066D878CA5CEDF87842E1C5EF3B9DE /* Pods-SCNavigationControlCenter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SCNavigationControlCenter_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		EE2ACC423C1900F56D5BE260285A1242 /* UIViewExt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		F495AE2EBBDBFC7AEAEF208684CCA969 /* Pods-SCNavigationControlCenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SCNavigationControlCenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F55CACDBEB7EA344211187EEF5D365BA /* Pods-SCNavigationControlCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SCNavigationControlCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FCD70E5A568DD0A19DAF438DEACAD229 /* Pods-SCNavigationControlCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SCNavigationControlCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		33BD76F826C253F616B857B204644716 /* SCNavigationControlCenter */ = {
 			isa = PBXGroup;
 			children = (
-				8674D1D520E8C64D8C22BA30710B1AB5 /* Pod */,
+				69F47E3EFC799C7CD964BC0F6421862B /* Pod */,
 				4C8525D8C86DEC0C7663C685AFF6F29D /* Support Files */,
 			);
 			name = SCNavigationControlCenter;
@@ -165,6 +165,14 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/SCNavigationControlCenter";
+			sourceTree = "<group>";
+		};
+		69F47E3EFC799C7CD964BC0F6421862B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8495BCEDF438ECA71AF324040C8BA33D /* Classes */,
+			);
+			path = Pod;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -196,12 +204,17 @@
 			path = "Target Support Files/Pods-SCNavigationControlCenter_Tests";
 			sourceTree = "<group>";
 		};
-		8674D1D520E8C64D8C22BA30710B1AB5 /* Pod */ = {
+		8495BCEDF438ECA71AF324040C8BA33D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9AA24DB6C886CD52F93FE52F4DED344D /* Classes */,
+				8999BCC0DFCAB83C393CC5A011A4B0D5 /* iCarousel.h */,
+				86FBB5D00684DD17F61F31A08299F80D /* iCarousel.m */,
+				25C23739F29F1D442AAA073EA08CE09A /* SCNavigationControlCenter.h */,
+				04F220E7870CDB2A61D133632BAAFCCC /* SCNavigationControlCenter.m */,
+				AD6D353E7826E58433B9CCE3EC78764F /* UIViewExt.h */,
+				EE2ACC423C1900F56D5BE260285A1242 /* UIViewExt.m */,
 			);
-			path = Pod;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		9A3017F67B7F7610E8727CCB2636A410 /* Targets Support Files */ = {
@@ -211,19 +224,6 @@
 				7EF197B4AFE41B79E3B61C9327149737 /* Pods-SCNavigationControlCenter_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		9AA24DB6C886CD52F93FE52F4DED344D /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				503973521C1165EA00C26369 /* SCNavigationControlCenter.h */,
-				503973531C1165EA00C26369 /* SCNavigationControlCenter.m */,
-				5039734A1C1165D400C26369 /* iCarousel.h */,
-				5039734B1C1165D400C26369 /* iCarousel.m */,
-				5039734C1C1165D400C26369 /* UIViewExt.h */,
-				5039734D1C1165D400C26369 /* UIViewExt.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -272,14 +272,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1FAD4BA50748786F017D76562915CB23 /* Headers */ = {
+		4FE7D286A65EAB79FBF79CC9E831A470 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5039734E1C1165D400C26369 /* iCarousel.h in Headers */,
-				503973541C1165EA00C26369 /* SCNavigationControlCenter.h in Headers */,
-				503973501C1165D400C26369 /* UIViewExt.h in Headers */,
-				C63F80188BE9C3A4CF1903E2CB553AE9 /* SCNavigationControlCenter-umbrella.h in Headers */,
+				293EE2B101111EA2A85A5881673917AE /* iCarousel.h in Headers */,
+				D2CC3F0E519C9EC55BD4B0B2B756B40D /* SCNavigationControlCenter-umbrella.h in Headers */,
+				4DB912DF4FED576EA0F96A3364D30C1B /* SCNavigationControlCenter.h in Headers */,
+				9209471ADC049937B23D6935BB160D2B /* UIViewExt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,10 +333,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 738607FDE223880BE341707DF1D8BF4D /* Build configuration list for PBXNativeTarget "SCNavigationControlCenter" */;
 			buildPhases = (
-				F28F9BA9ED9AD882B578C58C7433E936 /* Sources */,
+				D013B3114705AF369B5542EB6A975EEA /* Sources */,
 				74058E68809EF52B5D206E67F6AF0E0D /* Frameworks */,
 				01D9AFAF04AA95AFD7CF19BC8A4EC8B1 /* Resources */,
-				1FAD4BA50748786F017D76562915CB23 /* Headers */,
+				4FE7D286A65EAB79FBF79CC9E831A470 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -429,14 +429,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F28F9BA9ED9AD882B578C58C7433E936 /* Sources */ = {
+		D013B3114705AF369B5542EB6A975EEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				503973511C1165D400C26369 /* UIViewExt.m in Sources */,
-				5039734F1C1165D400C26369 /* iCarousel.m in Sources */,
-				503973551C1165EA00C26369 /* SCNavigationControlCenter.m in Sources */,
-				76A691062FA1C307059A34A9FC155320 /* SCNavigationControlCenter-dummy.m in Sources */,
+				E2DE507412B78212AF709E623AF2DBAE /* iCarousel.m in Sources */,
+				DC248E5C9F9FB322E65ABD7DA44BF5EE /* SCNavigationControlCenter-dummy.m in Sources */,
+				07B159265FCEC18A2209EEA71CE6EA04 /* SCNavigationControlCenter.m in Sources */,
+				97203B3D47C843F999DA684331221EBC /* UIViewExt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +472,19 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		012BDA5327337BD7DEC733DFB0AC8563 /* Release */ = {
+		0A67F9D804FB92A84A56F8E3FF602A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92E551ABB43E3C4830D89CBB52C0E455 /* SCNavigationControlCenter.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SCNavigationControlCenter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		38649CCF4B68416821818461642BCE5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 92E551ABB43E3C4830D89CBB52C0E455 /* SCNavigationControlCenter.xcconfig */;
 			buildSettings = {
@@ -486,7 +498,64 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SCNavigationControlCenter/SCNavigationControlCenter-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SCNavigationControlCenter/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCNavigationControlCenter/SCNavigationControlCenter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SCNavigationControlCenter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4B0FCEE46EBAD4FFAECF4971DAFCCD70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F495AE2EBBDBFC7AEAEF208684CCA969 /* Pods-SCNavigationControlCenter_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SCNavigationControlCenter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SCNavigationControlCenter_Example/Pods-SCNavigationControlCenter_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SCNavigationControlCenter_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52E517B6BD34CFE98E5EB00D9ACBE5F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92E551ABB43E3C4830D89CBB52C0E455 /* SCNavigationControlCenter.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCNavigationControlCenter/SCNavigationControlCenter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCNavigationControlCenter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SCNavigationControlCenter/SCNavigationControlCenter.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -499,41 +568,7 @@
 			};
 			name = Release;
 		};
-		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		0A67F9D804FB92A84A56F8E3FF602A22 /* Release */ = {
+		6881192F4D39932DC1F078736AFE2B0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 92E551ABB43E3C4830D89CBB52C0E455 /* SCNavigationControlCenter.xcconfig */;
 			buildSettings = {
@@ -543,9 +578,9 @@
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
-		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -577,53 +612,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		144677011BE0057E4C4FC858AEA44CAA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92E551ABB43E3C4830D89CBB52C0E455 /* SCNavigationControlCenter.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SCNavigationControlCenter/SCNavigationControlCenter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCNavigationControlCenter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SCNavigationControlCenter/SCNavigationControlCenter.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SCNavigationControlCenter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6881192F4D39932DC1F078736AFE2B0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92E551ABB43E3C4830D89CBB52C0E455 /* SCNavigationControlCenter.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = SCNavigationControlCenter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		90A77F02890A02EF7760ADEAA26245DE /* Debug */ = {
+		CC531E80D199C70D9F4AB39E965BF168 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCD70E5A568DD0A19DAF438DEACAD229 /* Pods-SCNavigationControlCenter_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -636,7 +632,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-SCNavigationControlCenter_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SCNavigationControlCenter_Tests/Pods-SCNavigationControlCenter_Tests.modulemap";
@@ -653,7 +649,41 @@
 			};
 			name = Debug;
 		};
-		C5C7C284BBDAA4DB45F7D9F3C98DBCB5 /* Release */ = {
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB9D96EE603A21CA16E55F3D30DA8B03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF844F895AA3DC8D3B103B434F9DBC55 /* Pods-SCNavigationControlCenter_Tests.release.xcconfig */;
 			buildSettings = {
@@ -666,7 +696,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-SCNavigationControlCenter_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SCNavigationControlCenter_Tests/Pods-SCNavigationControlCenter_Tests.modulemap";
@@ -683,7 +713,7 @@
 			};
 			name = Release;
 		};
-		E09F487455660756AC185968BE7A0AF5 /* Release */ = {
+		FD9535BE5187E12E259758BDE9A0F2EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F55CACDBEB7EA344211187EEF5D365BA /* Pods-SCNavigationControlCenter_Example.release.xcconfig */;
 			buildSettings = {
@@ -696,7 +726,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-SCNavigationControlCenter_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SCNavigationControlCenter_Example/Pods-SCNavigationControlCenter_Example.modulemap";
@@ -713,44 +743,14 @@
 			};
 			name = Release;
 		};
-		E4857A7AEAF7DF309DE3168906C251CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F495AE2EBBDBFC7AEAEF208684CCA969 /* Pods-SCNavigationControlCenter_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SCNavigationControlCenter_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SCNavigationControlCenter_Example/Pods-SCNavigationControlCenter_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_SCNavigationControlCenter_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		19826680727E3225319803DB5BD0A798 /* Build configuration list for PBXNativeTarget "Pods-SCNavigationControlCenter_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				90A77F02890A02EF7760ADEAA26245DE /* Debug */,
-				C5C7C284BBDAA4DB45F7D9F3C98DBCB5 /* Release */,
+				CC531E80D199C70D9F4AB39E965BF168 /* Debug */,
+				FB9D96EE603A21CA16E55F3D30DA8B03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -758,8 +758,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
-				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -767,8 +767,8 @@
 		738607FDE223880BE341707DF1D8BF4D /* Build configuration list for PBXNativeTarget "SCNavigationControlCenter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				144677011BE0057E4C4FC858AEA44CAA /* Debug */,
-				012BDA5327337BD7DEC733DFB0AC8563 /* Release */,
+				38649CCF4B68416821818461642BCE5F /* Debug */,
+				52E517B6BD34CFE98E5EB00D9ACBE5F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -776,8 +776,8 @@
 		AFB30317C495055AD5FCA333C1533EF9 /* Build configuration list for PBXNativeTarget "Pods-SCNavigationControlCenter_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4857A7AEAF7DF309DE3168906C251CE /* Debug */,
-				E09F487455660756AC185968BE7A0AF5 /* Release */,
+				4B0FCEE46EBAD4FFAECF4971DAFCCD70 /* Debug */,
+				FD9535BE5187E12E259758BDE9A0F2EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
