@@ -1,0 +1,14 @@
+PODS:
+  - SCNavigationControlCenter (0.1.0)
+
+DEPENDENCIES:
+  - SCNavigationControlCenter (from `../`)
+
+EXTERNAL SOURCES:
+  SCNavigationControlCenter:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SCNavigationControlCenter: 547e5c983b91d26468c61f7520554b6968fcaf0c
+
+COCOAPODS: 0.39.0

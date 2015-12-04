@@ -1,0 +1,25 @@
+{
+  "name": "SCNavigationControlCenter",
+  "version": "0.1.0",
+  "summary": "A short description of SCNavigationControlCenter.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SCNavigationControlCenter",
+  "license": "MIT",
+  "authors": {
+    "Sergio Chan": "yuheng9211@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SCNavigationControlCenter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "SCNavigationControlCenter": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

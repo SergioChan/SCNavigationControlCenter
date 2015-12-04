@@ -1,0 +1,6 @@
+framework module SCNavigationControlCenter {
+  umbrella header "SCNavigationControlCenter-umbrella.h"
+
+  export *
+  module * { export * }
+}
