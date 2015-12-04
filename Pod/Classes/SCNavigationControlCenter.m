@@ -12,6 +12,7 @@
 {
     NSMutableDictionary *_snapShots;
     UINavigationController *_navigationController;
+    CGFloat _popAnimationDuration;
 }
 
 @end
@@ -54,6 +55,7 @@
     self = [super initWithFrame:frame];
     if(self)
     {
+        _popAnimationDuration = 0.2f;
         _snapShots = [NSMutableDictionary dictionary];
         self.isShowing = NO;
         [self initSubViews];
@@ -265,10 +267,27 @@
 
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index
 {
-    UIViewController *tmp = [self.navigationController.viewControllers objectAtIndex:index];
-    [self hideWithCompletion:^{
-        [self.navigationController popToViewController:tmp animated:YES];
-    }];
+    if(!_isShowing)
+    {
+        return;
+    }
+    
+    [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:index] animated:NO];
+    
+    UIView *cardView = [self.carousel itemViewAtIndex:index];
+    if([self.carousel itemViewAtIndex:index+1])
+    {
+        UIView *nextCardView = [self.carousel itemViewAtIndex:index+1];
+        [nextCardView.layer addAnimation:[self moveoutAnimationForNextCardView:cardView] forKey:@"next_one_move_out"];
+    }
+    [cardView.layer addAnimation:[self popAnimationForCardView:cardView] forKey:@"chosen_one_pop_out"];
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    _isShowing = NO;
+    _backgroundWindow.hidden = YES;
+    _backgroundWindow.alpha = 0.0f;
 }
 
 - (void)carouseldidTapInBlankArea:(iCarousel *)carousel
@@ -303,12 +322,87 @@
 
 - (UIImage *)capture
 {
-    CALayer *layer = [[UIApplication sharedApplication] keyWindow].layer;
+    CALayer *layer = [[UIApplication sharedApplication].windows firstObject].layer;
     CGFloat scale = [UIScreen mainScreen].scale;
     UIGraphicsBeginImageContextWithOptions(layer.frame.size, NO, scale);
     
     [layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *screenshot = UIGraphicsGetImageFromCurrentImageContext();
     return screenshot;
+}
+
+- (CAAnimationGroup *)popAnimationForCardView:(UIView *)cardView
+{
+    CABasicAnimation *scaleAnimation;
+    scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];
+    scaleAnimation.fromValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
+    scaleAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(ScreenWidth/cardView.width, ScreenHeight/cardView.height, 1.0)];
+    scaleAnimation.duration = _popAnimationDuration;
+    scaleAnimation.cumulative = YES;
+    scaleAnimation.repeatCount = 1;
+    scaleAnimation.removedOnCompletion= NO;
+    scaleAnimation.fillMode=kCAFillModeForwards;
+    scaleAnimation.autoreverses = NO;
+    scaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    scaleAnimation.speed = 1.0f;
+    scaleAnimation.beginTime = 0.0f;
+    
+    CABasicAnimation *transitionAnimation;
+    CGFloat translationX = cardView.center.x - ScreenWidth/2.0f;
+    transitionAnimation = [CABasicAnimation animationWithKeyPath:@"transform.translation"];
+    transitionAnimation.fromValue = [NSValue valueWithCGSize:CGSizeMake(0.0f, 0.0f)];
+    transitionAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(translationX, 0.0f)];
+    transitionAnimation.duration = _popAnimationDuration;
+    transitionAnimation.cumulative = YES;
+    transitionAnimation.repeatCount = 1;
+    transitionAnimation.removedOnCompletion= NO;
+    transitionAnimation.fillMode=kCAFillModeForwards;
+    transitionAnimation.autoreverses = NO;
+    transitionAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    transitionAnimation.speed = 1.0f;
+    transitionAnimation.beginTime = 0.0f;
+    
+    CAAnimationGroup *groupAnimation = [CAAnimationGroup animation];
+    groupAnimation.duration = _popAnimationDuration;
+    groupAnimation.repeatCount = 1;
+    groupAnimation.removedOnCompletion= NO;
+    groupAnimation.fillMode=kCAFillModeForwards;
+    groupAnimation.autoreverses = NO;
+    groupAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    groupAnimation.delegate = self;
+    
+    groupAnimation.animations = [NSArray arrayWithObjects:scaleAnimation,transitionAnimation,nil];
+    return groupAnimation;
+}
+
+- (CAAnimationGroup *)moveoutAnimationForNextCardView:(UIView *)cardView
+{
+    CABasicAnimation *transitionAnimation;
+    CGFloat translationX = cardView.center.x - ScreenWidth/2.0f;
+    CGFloat offset = 20.0f;
+    transitionAnimation = [CABasicAnimation animationWithKeyPath:@"transform.translation"];
+    transitionAnimation.fromValue = [NSValue valueWithCGSize:CGSizeMake(0.0f, 0.0f)];
+    transitionAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(-translationX + offset, 0.0f)];
+    transitionAnimation.duration = _popAnimationDuration;
+    transitionAnimation.cumulative = YES;
+    transitionAnimation.repeatCount = 1;
+    transitionAnimation.removedOnCompletion= NO;
+    transitionAnimation.fillMode=kCAFillModeForwards;
+    transitionAnimation.autoreverses = NO;
+    transitionAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    transitionAnimation.speed = 1.0f;
+    transitionAnimation.beginTime = 0.0f;
+    
+    CAAnimationGroup *groupAnimation = [CAAnimationGroup animation];
+    groupAnimation.duration = _popAnimationDuration;
+    groupAnimation.repeatCount = 1;
+    groupAnimation.removedOnCompletion= NO;
+    groupAnimation.fillMode=kCAFillModeForwards;
+    groupAnimation.autoreverses = NO;
+    groupAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    groupAnimation.delegate = self;
+    
+    groupAnimation.animations = [NSArray arrayWithObjects:transitionAnimation,nil];
+    return groupAnimation;
 }
 @end
