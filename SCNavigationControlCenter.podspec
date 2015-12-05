@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SCNavigationControlCenter"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "An advanced navigation controll center."
 
 # This description is used to generate tags and improve search results.

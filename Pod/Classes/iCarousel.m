@@ -1357,7 +1357,7 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
     //fix scroll offset
     if (_numberOfItems > 0 && _scrollOffset < 0.0)
     {
-        [self scrollToItemAtIndex:0 animated:(_numberOfPlaceholders > 0)];
+        [self scrollToItemAtIndex:_numberOfItems-1 animated:NO];
     }
 }
 

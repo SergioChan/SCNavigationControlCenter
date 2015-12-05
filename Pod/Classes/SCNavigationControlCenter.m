@@ -100,14 +100,34 @@
     }
     _isShowing = YES;
     
-    [_backgroundWindow makeKeyAndVisible];
     [self.carousel reloadData];
-    [self.carousel scrollToItemAtIndex:self.navigationController.viewControllers.count-1 animated:NO];
+    [_backgroundWindow makeKeyAndVisible];
+    _backgroundWindow.alpha = 0.0f;
     
-    [UIView animateWithDuration:0.5f animations:^{
-        _backgroundWindow.alpha = 1.0f;
-    } completion:^(BOOL finished) {
-    }];
+    [self.carousel scrollToItemAtIndex:self.navigationController.viewControllers.count-1 animated:NO];
+    [self performSelector:@selector(appearAnimation) withObject:nil afterDelay:0.1f];
+    // 等待Carousel reload完成么 =。=
+}
+
+- (void)appearAnimation
+{
+    _backgroundWindow.alpha = 1.0f;
+    NSInteger maxIndex = self.carousel.numberOfItems - 1;
+    
+    UIView *current_cardView = [self.carousel itemViewAtIndex:maxIndex];
+    [current_cardView.layer removeAllAnimations];
+    [current_cardView.layer addAnimation:[self appearAnimationForCardView:current_cardView] forKey:@"wtf"];
+    
+    
+    for(NSInteger i=maxIndex-1;i>maxIndex-4;i--)
+    {
+        UIView *cardView = [self.carousel itemViewAtIndex:i];
+        if(cardView)
+        {
+            [cardView.layer removeAllAnimations];
+            [cardView.layer addAnimation:[self appearAnimationForCardView:cardView withIndex:maxIndex - i] forKey:@"wtf"];
+        }
+    }
 }
 
 - (void)showWithNavigationController:(UINavigationController *)controller
@@ -225,7 +245,7 @@
 
 - (void)carouselDidScroll:(iCarousel *)carousel
 {
-    for ( UIView *view in carousel.visibleItemViews)
+    for (UIView *view in carousel.visibleItemViews)
     {
         CGFloat offset = [carousel offsetForItemAtIndex:[carousel indexOfItemView:view]];
         
@@ -331,6 +351,13 @@
     return screenshot;
 }
 
+/**
+ *  选中的卡片的缩放和移动动画
+ *
+ *  @param cardView
+ *
+ *  @return CAAnimationGroup
+ */
 - (CAAnimationGroup *)popAnimationForCardView:(UIView *)cardView
 {
     CABasicAnimation *scaleAnimation;
@@ -369,17 +396,25 @@
     groupAnimation.fillMode=kCAFillModeForwards;
     groupAnimation.autoreverses = NO;
     groupAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    groupAnimation.delegate = self;
     
+    groupAnimation.delegate = self;
     groupAnimation.animations = [NSArray arrayWithObjects:scaleAnimation,transitionAnimation,nil];
+    
     return groupAnimation;
 }
 
+/**
+ *  选中的卡片上方的卡片的弹出动画
+ *
+ *  @param cardView
+ *
+ *  @return CAAnimationGroup
+ */
 - (CAAnimationGroup *)moveoutAnimationForNextCardView:(UIView *)cardView
 {
     CABasicAnimation *transitionAnimation;
     CGFloat translationX = cardView.center.x - ScreenWidth/2.0f;
-    CGFloat offset = 20.0f;
+    CGFloat offset = 0.0f;
     transitionAnimation = [CABasicAnimation animationWithKeyPath:@"transform.translation"];
     transitionAnimation.fromValue = [NSValue valueWithCGSize:CGSizeMake(0.0f, 0.0f)];
     transitionAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(-translationX + offset, 0.0f)];
@@ -400,9 +435,86 @@
     groupAnimation.fillMode=kCAFillModeForwards;
     groupAnimation.autoreverses = NO;
     groupAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    groupAnimation.delegate = self;
     
     groupAnimation.animations = [NSArray arrayWithObjects:transitionAnimation,nil];
+    return groupAnimation;
+}
+
+/**
+ *  当前卡片出现的动画
+ *
+ *  @param cardView 卡片的view
+ *
+ *  @return CAAnimationGroup
+ */
+- (CAAnimationGroup *)appearAnimationForCardView:(UIView *)cardView
+{
+    CABasicAnimation *scaleAnimation;
+    scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];
+    scaleAnimation.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(ScreenWidth/cardView.width, ScreenHeight/cardView.height, 1.0)];
+    scaleAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
+    scaleAnimation.duration = _popAnimationDuration;
+    scaleAnimation.cumulative = YES;
+    scaleAnimation.repeatCount = 1;
+    scaleAnimation.removedOnCompletion= NO;
+    scaleAnimation.fillMode=kCAFillModeForwards;
+    scaleAnimation.autoreverses = NO;
+    scaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    scaleAnimation.speed = 1.0f;
+    scaleAnimation.beginTime = 0.0f;
+    
+    CAAnimationGroup *groupAnimation = [CAAnimationGroup animation];
+    groupAnimation.duration = _popAnimationDuration + 0.1f;
+    groupAnimation.repeatCount = 1;
+    groupAnimation.removedOnCompletion= NO;
+    groupAnimation.fillMode=kCAFillModeForwards;
+    groupAnimation.autoreverses = NO;
+    groupAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    
+    //groupAnimation.delegate = self;
+    groupAnimation.animations = [NSArray arrayWithObjects:scaleAnimation,nil];
+    
+    return groupAnimation;
+}
+
+/**
+ *  后排的抽屉式弹出效果
+ *
+ *  @param cardView
+ *  @param index    后排的序号
+ *
+ *  @return CAAnimationGroup
+ */
+- (CAAnimationGroup *)appearAnimationForCardView:(UIView *)cardView withIndex:(NSInteger)index
+{
+    CABasicAnimation *transitionAnimation;
+    CGFloat translationX = index * 50.0f;
+    
+    transitionAnimation = [CABasicAnimation animationWithKeyPath:@"transform.translation"];
+    transitionAnimation.fromValue = [NSValue valueWithCGSize:CGSizeMake(translationX, 0.0f)];
+    transitionAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(0.0f, 0.0f)];
+    transitionAnimation.duration = _popAnimationDuration;
+    transitionAnimation.cumulative = YES;
+    transitionAnimation.repeatCount = 1;
+    transitionAnimation.removedOnCompletion= NO;
+    transitionAnimation.fillMode=kCAFillModeForwards;
+    transitionAnimation.autoreverses = NO;
+    transitionAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    transitionAnimation.speed = 1.0f;
+    transitionAnimation.beginTime = 0.0f;
+    
+    CAAnimationGroup *groupAnimation = [CAAnimationGroup animation];
+    groupAnimation.duration = _popAnimationDuration + 0.1f;
+    groupAnimation.repeatCount = 1;
+    groupAnimation.removedOnCompletion= NO;
+    groupAnimation.fillMode=kCAFillModeForwards;
+    groupAnimation.autoreverses = NO;
+    groupAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    groupAnimation.beginTime = 0.0f;
+    
+    //groupAnimation.delegate = self;
+    groupAnimation.animations = [NSArray arrayWithObjects:transitionAnimation,nil];
+    
     return groupAnimation;
 }
 @end
