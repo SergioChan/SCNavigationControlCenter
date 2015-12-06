@@ -18,7 +18,7 @@ iOS上的改进的导航栏控制中心。
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-This idea is originated from [In-App-Navigation-Improvement](https://dribbble.com/shots/2363812-In-App-Navigation-Improvement), since iOS9 has new multi-tasking control center, we are able to transfer the old style of navigation which you have to pop to root view by clicking Back button many times to a similar new one . You can now be able to pop to any previous view controller without clicking Back button for so many times. 
+This idea is originated from [In-App-Navigation-Improvement](https://dribbble.com/shots/2363812-In-App-Navigation-Improvement), since iOS9 has new multi-tasking control center, we are able to transfer the old style of navigation which you have to pop to root view by clicking Back button many times to a similar new one . You can now be able to pop to any previous view controller without clicking Back button for so many times.   
 It's a simple improvement anyway. This library may only be suitable for massive and complicated project like Facebook, so I designed this library mostly for its coupling. Bringing this library into your project won't bring you extra work, you only need to implement a line of code in your navigation controller's `viewDidLoad` method as shown in the Demo.  
 You can custom the entrance for triggering the control center. In the Demo, I will show you by long pressing the navigation Bar. You can simply custom the triggering by calling:
 
