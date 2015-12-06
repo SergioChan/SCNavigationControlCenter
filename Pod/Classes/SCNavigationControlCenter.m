@@ -13,6 +13,7 @@
     NSMutableDictionary *_snapShots;
     UINavigationController *_navigationController;
     CGFloat _popAnimationDuration;
+    UIWindow *_backgroundWindow;
 }
 
 @end
@@ -40,6 +41,7 @@
     _navigationController.delegate = self;
 }
 
+# pragma mark - Initial method
 + (SCNavigationControlCenter *) sharedInstance
 {
     static dispatch_once_t  onceToken;
@@ -92,6 +94,7 @@
     self.carousel.viewpointOffset = CGSizeMake(-cardWidth/5.0f, 0);
 }
 
+# pragma mark - Basic method for control showing and hiding
 - (void)show
 {
     if(_isShowing)
@@ -160,6 +163,7 @@
     }];
 }
 
+# pragma mark - iCarousel Delegate
 - (NSInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
     if(self.navigationController)
@@ -303,18 +307,12 @@
     [cardView.layer addAnimation:[self popAnimationForCardView:cardView] forKey:@"chosen_one_pop_out"];
 }
 
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
-{
-    _isShowing = NO;
-    _backgroundWindow.hidden = YES;
-    _backgroundWindow.alpha = 0.0f;
-}
-
 - (void)carouseldidTapInBlankArea:(iCarousel *)carousel
 {
     [self hide];
 }
 
+# pragma mark - Navigation delegate
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     NSString *key= [NSString stringWithFormat:@"%@",viewController];
@@ -340,6 +338,7 @@
     }
 }
 
+# pragma mark - Get a screen capture
 - (UIImage *)capture
 {
     CALayer *layer = [[UIApplication sharedApplication].windows firstObject].layer;
@@ -351,6 +350,7 @@
     return screenshot;
 }
 
+#pragma mark - Animation methods
 /**
  *  选中的卡片的缩放和移动动画
  *
@@ -516,5 +516,12 @@
     groupAnimation.animations = [NSArray arrayWithObjects:transitionAnimation,nil];
     
     return groupAnimation;
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    _isShowing = NO;
+    _backgroundWindow.hidden = YES;
+    _backgroundWindow.alpha = 0.0f;
 }
 @end

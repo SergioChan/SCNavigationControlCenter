@@ -18,6 +18,14 @@ iOS上的改进的导航栏控制中心。
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+This idea is originated from [In-App-Navigation-Improvement](https://dribbble.com/shots/2363812-In-App-Navigation-Improvement), since iOS9 has new multi-tasking control center, we are able to transfer the old style of navigation to a similar new one which you have to pop to root view by clicking Back button many times. You can now be able to pop to any previoud view controller without clicking Back button for so many times, really annoying isn't it?  
+It's a simple improvement anyway. This library may only be suitable for massive and complicated project like Facebook, so I designed this library mostly for its coupling. Bringing this library into your project won't bring you extra work, you only need to implement a line of code in your navigation controller's `viewDidLoad` method as shown in the Demo.  
+You can custom the entrance for triggering the control center. In the Demo, I will show you by long pressing the navigation Bar. You can simply custom the triggering by calling:
+
+```Objective-C
+[[SCNavigationControlCenter sharedInstance] showWithNavigationController:self];
+```
+
 这个创意起源于[In-App-Navigation-Improvement](https://dribbble.com/shots/2363812-In-App-Navigation-Improvement)，由于iOS9推出了新的多任务控制交互，我们可以将传统的一层一层手动返回navigation的逻辑修改为类似的交互。你可以在当前navigationController的视图栈中任意抽取控制器然后pop到那个控制器，而不用手动连续点按Back。这是一个很简单的交互改进。  
 由于这个控件可能只适用于规模较大，且页面逻辑极为庞大和复杂的项目，因此我在设计之初考虑的重点就是耦合性。集成这个控件不会给你的项目带去一丝一毫的影响和多余的工作量，你只需要在navigationController的`viewDidLoad`中加上demo中所示的一行代码，并且为控制中心的触发添加一个事件入口。在demo中我展示的是navigationBar长按触发，这个事件可以由你自定义，只要相同的调用
 
@@ -58,4 +66,22 @@ Sergio Chan, yuheng9211@qq.com
 
 ## License
 
-SCNavigationControlCenter is available under the MIT license. See the LICENSE file for more info.
+SCNavigationControlCenter is available under the MIT license. 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
