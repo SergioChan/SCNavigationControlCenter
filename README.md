@@ -12,7 +12,7 @@ iOS上的改进的导航栏控制中心。
 ![image](https://raw.githubusercontent.com/SergioChan/SCNavigationControlCenter/master/Preview/preview.gif)
 
 ## Version 版本
-0.1.3
+0.1.5
 
 ## Usage 用法
 
@@ -52,13 +52,15 @@ pod "SCNavigationControlCenter"
 * v0.1.1 Add demo project
 * v0.1.2 Add pop out animation
 * v0.1.3 Add appear animation
-
+* v0.1.5 Fix a memory issue
 ---  
   
 * v0.1.0 基本版本
 * v0.1.1 添加示例程序
 * v0.1.2 添加弹出动画
 * v0.1.3 添加出现动画
+* v0.1.5 修复一个内存bug
+
 
 ## Author
 
