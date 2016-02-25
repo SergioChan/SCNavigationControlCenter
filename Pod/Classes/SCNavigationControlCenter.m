@@ -347,6 +347,7 @@
     
     [layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *screenshot = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
     return screenshot;
 }
 
